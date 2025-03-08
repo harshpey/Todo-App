@@ -2,6 +2,8 @@ import React from "react";
 import book_todo from "../assets/book-todo.png";
 import group from "../assets/Group.png";
 import google_icon from "../assets/google-icon.png";
+import { Link } from "react-router-dom";
+import Signup from "./Signup";
 
 const Login = () => {
   return (
@@ -10,7 +12,10 @@ const Login = () => {
         <img src={book_todo} alt="" className="object-contain h-550" />
       </div>
       <div className="flex p-6 max-[880px]:w-full max-[880px]:justify-center">
-        <form action="" className="flex flex-col gap-2 w-96 max-[880px]:flex max-[880px]:items-stretch ">
+        <form
+          action=""
+          className="flex flex-col gap-2 w-96 max-[880px]:flex max-[880px]:items-stretch "
+        >
           <div className="flex items-center gap-4">
             <img src={group} alt="" />
             <p className="text-white font-semibold text-3xl ">To-Do List</p>
@@ -59,7 +64,7 @@ const Login = () => {
               Don't have an account?
               <span className="text-magenta-light text-base underline">
                 {" "}
-                Create an account
+                <Link to="signup">Create an account</Link>
               </span>
             </p>
           </div>

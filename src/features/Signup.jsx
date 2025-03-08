@@ -2,6 +2,7 @@ import React from 'react'
 import book_todo from "../assets/book-todo.png";
 import group from "../assets/Group.png";
 import google_icon from "../assets/google-icon.png";
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
@@ -68,7 +69,8 @@ const Signup = () => {
                     Already have an account?
                     <span className="text-magenta-light text-base underline">
                       {" "}
-                      Signin
+                      <Link to="/">Signin</Link>
+                      
                     </span>
                   </p>
                 </div>

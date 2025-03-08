@@ -36,7 +36,9 @@ export default {
       "todo-card-four": "#F8BEBE",
       "modal-dark" : "#212121",
       "modal-light" : "#393939",
-      "modal-input-text" : "#828282"
+      "modal-input-text" : "#828282",
+      "save-button-color" : "#FF9D98",
+      "border-light-color" : "#333333"
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],

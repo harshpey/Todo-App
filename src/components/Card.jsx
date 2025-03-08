@@ -18,7 +18,7 @@ const Card = () => {
   console.log(generateColor());
 
   return (
-    <div className={`flex flex-col gap-4 w-[286px] p-4 ${generateColor()}`}>
+    <div className={`flex flex-col gap-4 w-[286px] p-4 relative ${generateColor()}`}>
       <div className="flex justify-between">
         <input
           type="checkbox"
@@ -39,6 +39,11 @@ const Card = () => {
         <div className="bg-white">
           <span className="text-[14px] p-2 font-dm">High Priority</span>
         </div>
+      </div>
+      <div className="bg-black-light w-[100px] absolute right-6 top-10">
+        <p className="text-white font-dm font-[200] text-[14px] py-1 ml-2">Edit</p>
+        <hr className="border-border-light-color"/>
+        <p className="text-white font-dm font-[200] text-[14px] py-1 ml-2">Delete</p>
       </div>
     </div>
   );
